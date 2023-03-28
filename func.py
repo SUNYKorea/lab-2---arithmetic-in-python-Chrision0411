@@ -10,10 +10,10 @@ def div(x, y):
 #       neg() should return the negation of the given number, and sqrt() should
 #       return the square root of the given number. 
 def neg(x):
-    return x ** 2# fill here
+    return -x # fill here
 
 def sqrt(x):
-    return x ** 1/2 # fill here
+    return x^1/2 # fill here
 
 # -------------------------------------- Task 2 -----------------------------------
 
@@ -24,8 +24,8 @@ a = 1
 b = -3
 c = 1
 
-x1 = (-b + (b ** 2 - 4 * a * c) ** 0.5) # TODO: write a code to compute the first root of the quadratic equation
-x2 = (-b - (b ** 2 - 4 * a * c) ** 0.5) # TODO: then do the same for the second root
+x1 = add((neg(b)), (sub(b ** 2, 4 * a * c) ** 0.5)) # TODO: write a code to compute the first root of the quadratic equation
+x2 = sub((neg(b)), (sub(b ** 2, 4 * a * c) ** 0.5)) # TODO: then do the same for the second root
 # Note: Make sure to remove the ellipsis (...) when you're writing your code
 
 print("First root:" + str(x1))
